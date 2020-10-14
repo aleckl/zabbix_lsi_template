@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>5.0</version>
-    <date>2020-10-14T01:35:48Z</date>
+    <date>2020-10-14T01:53:09Z</date>
     <groups>
         <group>
             <name>LSI</name>
@@ -648,9 +648,9 @@
                             </master_item>
                             <trigger_prototypes>
                                 <trigger_prototype>
-                                    <expression>{last()}&gt;=70</expression>
+                                    <expression>{last()}&gt;=90</expression>
                                     <recovery_mode>RECOVERY_EXPRESSION</recovery_mode>
-                                    <recovery_expression>{last()}&lt;70</recovery_expression>
+                                    <recovery_expression>{last()}&lt;90</recovery_expression>
                                     <name>LSI controller {#CTLID} overheat</name>
                                     <priority>HIGH</priority>
                                 </trigger_prototype>
